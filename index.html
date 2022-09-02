@@ -19,6 +19,30 @@
             position: absolute;
             top: calc(95vh / 2 - 50px);
             left: calc(50% - 50px);
+            animation: moving 46s linear 2 alternate;
+        }
+
+        @keyframes moving {
+            0% {
+                left: calc(50% - 50px);
+                top: calc(95vh / 2 - 50px);
+            }
+            25% {
+                left: calc((50% - 50px) + 200px);
+                top: calc(95vh / 2 - 50px);
+            }
+            50% {
+                left: calc((50% - 50px) + 200px);
+                top: calc((95vh / 2 - 50px) - 200px);
+            }
+            75% {
+                left: calc(50% - 50px);
+                top: calc((95vh / 2 - 50px) - 200px);
+            }
+            100% {
+                left: calc(50% - 50px);
+                top: calc(95vh / 2 - 50px);
+            }
         }
     </style>
 </head>
