@@ -22,6 +22,10 @@
             animation: moving 46s linear 2 alternate;
         }
 
+        .tail {
+            z-index: -1;
+        }
+
         @keyframes moving {
             0% {
                 left: calc(50% - 50px);
@@ -49,6 +53,7 @@
 
 <body>
     <img src="location.png" alt="the moon">
+    <img class="tail" src="location.png" alt="the moon">
     <script src="script.js"></script>
 </body>
 
