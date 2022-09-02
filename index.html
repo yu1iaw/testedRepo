@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <style>
         body {
+            height: 95vh;
+            position: relative;
             /* background: rgb(34,193,195); */
-            background: radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+            background: radial-gradient(circle, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
         }
-            
+
+        img {
+            width: 100px;
+            position: absolute;
+            top: calc(95vh / 2 - 50px);
+            left: calc(50% - 50px);
+        }
     </style>
-    <title>Document</title>
 </head>
+
 <body>
+    <img src="location.png" alt="the moon">
     <script src="script.js"></script>
 </body>
+
 </html>
